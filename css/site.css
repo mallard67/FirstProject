@@ -1,7 +1,7 @@
 body,
 html {
     color: white;
-    height: 100%; /* added to correct color on bottom of site for testing */
+    height: 100%; /* added to correct color */
 }
 
 #hero {
