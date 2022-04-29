@@ -47,7 +47,9 @@
     <main id="hero">
         <div class="container col-xxl-8 px-4 py-5">
         <h1 class="text-center mb-3">Contact Me</h1>
-        <form action="#">
+        <!-- Netlify form setup and capcha spam processing (netlify has spam processing too) - 
+        netlify looks for the form tag below and automatically modifies the form so it is ready to process -->
+        <form name="ToDo-ContactForm" method="POST" data-netlify-recaptcha="true" data-netlify="true" >
             <div class="row mb-1">
                 <div class="col">
                     <label class="form-label">First Name</label>
@@ -86,6 +88,7 @@
                         aria-label="Message" required></textarea>
                 </div>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
         </form>
         </div>
